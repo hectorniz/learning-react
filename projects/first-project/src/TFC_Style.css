@@ -1,0 +1,72 @@
+.tfc-container{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+}
+.tfc-container:hover{
+    background-color: #22303c;
+}
+
+.tfc-header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tfc-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.tfc-info-username{
+    opacity: .6;
+}
+
+.tfc-avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+}
+
+.tfc-button{
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+
+.tfc-button:hover{
+    box-shadow: 0 0 10px #09f;
+    background-color: white;
+}
+
+.tfc-button.is-following{
+    border: 1px solid #fff;
+    background-color: #15202b;
+    color: #fff;
+    width: 140px;
+}
+.tfc-button.is-following:hover{
+    box-shadow: none;
+    border: 1px solid #ff0f0f;
+    background-color: #ff45453d ;
+    color: #ff0f0f;
+    transition: .3s ease all;
+}
+.tfc-button-stopfollowing{
+    display:none;
+}
+
+.tfc-button.is-following:hover .tfc-button-text{
+    display: none;
+}
+
+.tfc-button.is-following:hover .tfc-button-stopfollowing{
+    display: block;
+    
+}
